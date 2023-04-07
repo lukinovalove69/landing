@@ -371,7 +371,7 @@
 
 .team__selected-photo {
     flex-shrink: 0;
-    width: 322px;
+    max-width: 322px;
     height: 440px;
     margin-right: 66px;
     background-color: #FF3F40;
@@ -581,6 +581,10 @@
 
 /* Feedback */
 
+.feedback__left-box {
+    flex: 1 1 auto;
+}
+
 .feedback {}
 
 .feedback__header {
@@ -724,7 +728,7 @@
     box-sizing: border-box;
     padding: 20px 0 0;
     color: #B8B8B8;
-    min-height: 112px;
+    max-height: 112px;
     background-color: #2D2D2D;
     align-items: center;
     }
@@ -737,13 +741,74 @@
 
 .footer__link {
     display: inline-block;
+    margin-right: 18px;
 }
 
 .footer__social-links > .footer__link:not(:last-child) {
     margin-right: 18px;
 }
 
-.footer__link {
-    margin-right: 18px; 
-}
+/* Responsiv */
+  
+@media screen and (max-width: 1286px) {
+    .intro {
+        flex-wrap: nowrap;
+    }
+    .intro__content {
+        width: 50%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding-right: 16px;
+    }
+    .intro__heading {
+        font-size: 5vw;
+    }
+    .intro__image {
+        width: 100%;
+        height: auto;
+    }
 
+    .products {
+        justify-content: flex-start;
+    }
+
+    .product {
+        max-width: 100%;
+        margin-right: 10px;
+    }
+
+    .feedback {
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 0 1vw;
+        grid-column: 1 / 6;
+        grid-row: 1/2;
+    }
+
+    .feedback__bodi {
+        margin-right: 0;
+    }
+
+    .feedback-contacts {
+        flex-wrap: wrap;
+        padding-left: initial;
+        padding-right: initial;
+        padding-bottom: 0;
+        grid-template-columns: 100%;
+    }
+
+    .feedback__left-box {
+        flex: 0 1 auto;
+    }
+
+    .contacts {
+        width: 100%;
+        max-width: 100%;
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+    }
+
+    .feedback-contacts::after {
+        content: initial;
+    }
+}
