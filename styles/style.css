@@ -139,7 +139,7 @@
 .action-button_red {
     font-size: 18px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--primary-color-w);
     background-color: #FF3F40;
 }
 
@@ -195,7 +195,7 @@
     font-size: 18px;
     font-weight: 700;
     color: #FF2D2D;
-    background-color: #FFFFFF;
+    background-color: var(--primary-color-w);
     border: 2px solid #FF0000
 }
 
@@ -473,7 +473,7 @@
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    color: #FFFFFF;
+    color: var(--primary-color-w);
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -516,7 +516,7 @@
 }
 
 .subscribe__heading {
-    color: #FFFFFF;
+    color: var(--primary-color-w);
     font-family: 'Open Sans';
     line-height: 24px;
     letter-spacing: 1px;
@@ -530,7 +530,7 @@
     letter-spacing: 1px;
     font-size: 16px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--primary-color-w);
 }
 
 .subscribe__form {
@@ -550,7 +550,7 @@
     padding-right: 22px;
     padding-left: 36px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: var(--primary-color-w);
     margin-top: 56px;
     margin-bottom: 16px;
     border-radius: 5px;
@@ -561,7 +561,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: var(--primary-color-w);
     font-size: 18px;
     font-weight: 700;
     width: 218px;
@@ -689,7 +689,7 @@
     width: 100%;
     max-width: 732px;
     height: 74px;
-    color: #FFFFFF;
+    color: var(--primary-color-w);
     font-size: 18px;
     background-color: #FF3B3B;
     border-radius: 5px;
@@ -700,7 +700,7 @@
 /* Contacts */
 
 .contacts {
-    color: #FFFFFF;
+    color: var(--primary-color-w);
     box-sizing: border-box;
     position: relative;
     background-color: #2D2D2D;
@@ -933,4 +933,8 @@
     .intro__heading {
         font-size: 40px;
     }
+}
+
+:root {
+    --primary-color-w: #FFFFFF;
 }
