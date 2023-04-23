@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    width: 100%;
+    width: calc(100% - 20px);
     max-width: 1250px;
     min-height: 90px;
     margin: 0 auto;
@@ -53,7 +53,7 @@
     flex-wrap: wrap;
     align-items: stretch;
     list-style: none;
-    padding: 0;
+    padding: calc(1vw + 2px);
     margin: 0;
 }
 
@@ -128,7 +128,7 @@
     font-family: 'Open Sans';
     box-sizing: border-box;
     display: inline-block;
-    width: 228px;
+    width: min(50%, 228px);
     height: 56px;
     padding: 16px 0;
     text-align: center;
@@ -201,7 +201,7 @@
 
 .services__blocks {
     flex: 1 1;
-    max-width: 610px;
+    width: clamp(300px, 50%, 610px);
     display: flex;
     flex-wrap: wrap;
     margin-top: 36px;
@@ -593,7 +593,7 @@
 /* Feedback */
 
 .feedback__left-box {
-    flex:  1 1 auto;
+    flex: 1 1 auto;
 }
 
 .feedback {}
