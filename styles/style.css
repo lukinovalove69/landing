@@ -6,9 +6,9 @@
     flex-direction: column;
 }
 
-.page__header_grey {
+/* .page__header_grey {
     background-color: #F6F2F2;
-}
+} */
 
 .header__line {
     width: 134px;
@@ -83,9 +83,9 @@
 
 /* intro */
 
-.page__content {
+/* .page__content {
     flex-grow: 1;
-}
+} */
 
 .page__intro {
     padding-top: 102px;
@@ -937,4 +937,93 @@
 
 :root {
     --primary-color-w: #FFFFFF;
+}
+
+/* Popup-menu */
+
+.popup-menu__button {
+    z-index: 1;
+    display: none;
+    padding: 0;
+    min-width: 140px;
+    height: 50px;
+    background-image: url('../images/');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFFFFF;
+}
+
+/* скрыть ненужные элементы */
+@media screen and (max-width: 600px) {
+   .popup-menu__button {
+    display: block;
+   }
+
+   .menu {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+   }
+   .popup-menu {
+    position: relative;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+   }
+   .popup-menu__list {
+    visibility: visible;
+    position: absolute;
+    bottom: 0;
+    transform: translate(100%);
+    z-index: -1;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    transition: visibility, transform 1s, 0.5s ease-in-out;
+   }
+} 
+
+@media screen and (mix-width: 600px) {
+    .popup-menu__list {
+        visibility: hidden;
+    }
+
+    .hide-popup {
+        transform: translateY(-50px);
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    .popup-menu__item {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        min-height: 90px;
+    }
+
+    .popup-menu__item:hover {
+        background-color: #FF3F40;
+    }
+
+    .popup-menu__link {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        color: #e0e0e0;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 }
