@@ -11,7 +11,7 @@ popupButton.addEventListener('click', handleMenu);
     popupMenu.classList.toggle('hide-popup');
  }
 
- //Функция приклике на любое место экрана
+ //Функция при клике на любое место экрана
 
 document.addEventListener('click', hidePopup);
 
