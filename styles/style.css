@@ -893,10 +893,6 @@
         width: 100%;
         max-width: 100%;
     }
-
-    .contacts {
-        padding: 1vw;
-    }
 }
 
 @media screen and (max-width: 760px) {
@@ -932,6 +928,45 @@
 
     .intro__heading {
         font-size: 40px;
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe__text {
+        margin-bottom: 20px;
+    }
+
+    .service__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team__selected-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .action-button_white {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+
+    .subscribe {
+        padding-top: 54px;
+        padding-bottom: 54px;
+        margin-top: 40px;
     }
 }
 
@@ -1030,4 +1065,3 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-
