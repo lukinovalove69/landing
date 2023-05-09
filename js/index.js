@@ -1,9 +1,10 @@
 //Найти нужные узлы
-const popupButton = document.querySelector('popup-menu__button');
-const popupWrapper = document.querySelector('popup-menu');
-const popupMenu = document.querySelector('popup-menu__list');
+const popupButton = document.querySelector('.popup-menu__button');
+const popupWrapper = document.querySelector('.popup-menu');
+const popupMenu = document.querySelector('.popup-menu__list');
 
 //Функция клика по кнопке
+
 popupButton.addEventListener('click', handleMenu);
 
  //Функция, которая показывает и срывает поп-ап
