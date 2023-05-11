@@ -1115,7 +1115,7 @@
     .feedback__text {
         display: flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         margin-left: 50px;
     }
 
@@ -1165,13 +1165,12 @@
     min-width: 260px;
 }
 
- @media screen and (min-width: 600px) {
-    .team__selected-about 
-    .feature__text
-    .popup-menu__list {
+@media screen and (min-width: 600px) {
+    .team__selected-about .feature__text .popup-menu__list {
         visibility: hidden;
     }
 }
+
 .hide-popup {
     transform: translateY(-50px);
     z-index: -1;
@@ -1206,4 +1205,45 @@
 
 @media screen and (max-width: 350px) {
 
+    .intro__heading,
+    .intro__heading,
+    .services__heading,
+    .section-heading,
+    .feedback__heading {
+        font-size: 32px;
+        line-height: 40px;
+        margin-left: 34px;
+        text-align: center;
+    
+    }
+
+    .action-button_red {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .action-button_white {
+        margin-bottom: 30px;
+    }
+
+    .product {
+        margin-left: 20px;
+        }
+    
+    .team__selected-name {
+        font-size: 32px;
+        line-height: 40px;
+        margin-left: 34px;
+        text-align: center;
+        justify-content: flex-start;
+    }
+    .team__selected-photo {
+    margin-left: 56px;
+    }
+    .members {
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 46px;
+    }
 }
