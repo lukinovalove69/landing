@@ -578,7 +578,7 @@
 /* Feedback-contacts */
 
 .feedback-contacts {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-top: 92px;
@@ -594,6 +594,10 @@
 
 .feedback__left-box {
     flex: 1 1 auto;
+}
+
+.feedback {
+    
 }
 
 .feedback__header {
@@ -1313,4 +1317,4 @@
     .footer__copyright {
         margin-left: 0;
     }
-}
+} 
