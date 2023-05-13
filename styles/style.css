@@ -578,7 +578,7 @@
 /* Feedback-contacts */
 
 .feedback-contacts {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: flex-end;
     padding-top: 92px;
@@ -595,8 +595,6 @@
 .feedback__left-box {
     flex: 1 1 auto;
 }
-
-.feedback {}
 
 .feedback__header {
     margin-bottom: 52px;
@@ -789,7 +787,8 @@
 
     .services__heading,
     .team__heading,
-    .contacts__heading {
+    .contacts__heading,
+    .feedback__heading {
         margin-left: 120px;
     }
 
@@ -797,7 +796,8 @@
     .services__text,
     .team__text,
     .contacts__address,
-    .footer__copyright {
+    .footer__copyright,
+    .feedback__text {
         margin-left: 120px;
     }
 
@@ -829,7 +829,8 @@
         margin-left: 120px;
     }
 
-    .team__line {
+    .team__line,
+    .feedback__line {
         margin-left: 120px;
     }
 
@@ -893,7 +894,7 @@
 
     .subscribe__heading {
         line-height: 50px;
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .product {
@@ -916,11 +917,6 @@
     .intro__heading,
     .services__heading {
         font-size: 38px;
-        margin-left: 20px;
-    }
-
-    .action-button {
-        margin-left: 20px;
     }
 }
 
@@ -961,6 +957,10 @@
         margin-left: 20px;
     }
 
+    .subscribe {
+        margin-left: 0;
+    }
+
     .members {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -970,6 +970,19 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    .intro__heading {
+        margin-left: 20px;
+    }
+
+    .action-button {
+        margin-left: 40px;
+    }
+
+    .product {
+        margin-left: 20px;
+    }
+
     .services__lead {
         width: 100%;
         max-width: 100%;
@@ -980,10 +993,13 @@
         max-width: 100%;
     }
 
+    .contacts {
+        height: 80%;
+    }
+
     .footer__content {
         margin-left: 84px;
     }
-
 
 }
 
@@ -1208,13 +1224,24 @@
     .intro__heading,
     .intro__heading,
     .services__heading,
-    .section-heading,
-    .feedback__heading {
+    .feedback__heading,
+    .contacts__heading {
         font-size: 32px;
         line-height: 40px;
-        margin-left: 34px;
         text-align: center;
-    
+    }
+
+    .intro__text,
+    .services__text,
+    .team__text,
+    .team__selected-about,
+    .subscribe__text,
+    .contacts__address {
+        margin-left: 20px;
+    }
+
+    .feedback__text {
+        margin-left: 120px;
     }
 
     .action-button_red {
@@ -1225,25 +1252,65 @@
 
     .action-button_white {
         margin-bottom: 30px;
+        margin-left: 20px;
     }
 
     .product {
-        margin-left: 20px;
-        }
-    
+        margin-left: 10px;
+    }
+
     .team__selected-name {
-        font-size: 32px;
         line-height: 40px;
-        margin-left: 34px;
+        margin-left: 26px;
         text-align: center;
         justify-content: flex-start;
     }
+
     .team__selected-photo {
-    margin-left: 56px;
+        margin-left: 56px;
     }
+
+    .team__line,
+    .feedback__line {
+        margin-left: 110px;
+    }
+
+    .team__selected-about {
+        margin-right: 20em;
+        margin-left: 10px;
+    }
+
+    .team__selected-link {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
     .members {
         flex-direction: column;
         align-items: stretch;
         margin-left: 46px;
+    }
+
+    .feedback__form {
+        margin-left: 0;
+    }
+
+    .feedback__text {
+        margin-left: 20px;
+    }
+
+    .subscribe {
+        margin-left: 0;
+    }
+
+    .contacts {
+        grid-column: auto;
+        min-width: 290px;
+        height: 100%;
+        max-height: 420px;
+    }
+
+    .footer__copyright {
+        margin-left: 0;
     }
 }
