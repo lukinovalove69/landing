@@ -762,6 +762,10 @@
         margin-left: 120px;
     }
 
+    .section {
+        padding-left: 0;
+    }
+
     .services__heading,
     .team__heading,
     .contacts__heading,
@@ -818,7 +822,7 @@
     }
 
     .subscribe {
-        margin-left: 14vw;
+        margin-left: 14px;
     }
 
     .subscribe__heading {
@@ -859,6 +863,7 @@
     .feedback-contacts::after {
         content: initial;
     }
+
 }
 
 @media screen and (max-width: 908px) {
